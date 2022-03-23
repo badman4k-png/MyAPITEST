@@ -1,0 +1,33 @@
+GET http://localhost:3000/subscribers
+
+### 
+GET http://localhost:3000/subscribers/623aa4a4b4384f56cddb7d40
+
+### 
+POST http://localhost:3000/subscribers 
+Content-Type: application/json
+
+{
+"name": "Anirach Mingkhwan", "subscribedToChannel": "Eat and Travel"
+}
+
+### 
+DELETE http://localhost:3000/subscribers/623ad3f944160d2223c6f5d7
+
+### 
+PATCH http://localhost:3000/subscribers/623ad36a44160d2223c6f5d0 
+Content-Type: application/json
+
+{
+"subscribedToChannel": "Camping"
+}
+
+### 
+POST http://apitest07.app.ruk-com.cloud/subscribers Content-Type: application/json
+
+{
+"name": "Homer Simpson", "subscribedToChannel": "Beers"
+}
+
+### 
+GET http://apitest07.app.ruk-com.cloud/subscribers
